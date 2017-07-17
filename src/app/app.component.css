@@ -69,7 +69,7 @@ a {
 .header {
     height: 137px;
 
-    background: url('app/img/header.png');
+    background: url('assets/images/header.png');
 }
 
 .header_logo {
@@ -164,7 +164,7 @@ a {
 .content_wrapper {
     min-height: 1258px;
 
-    background: url('app/img/ukstyle.jpg');
+    background: url('assets/images/ukstyle.jpg');
 }
 /****************    left panel         *****************************/
 .left_panel {
@@ -177,7 +177,7 @@ a {
     height: 1020px;
     margin-top: 40px;
 
-    background: url('app/img/header.png');
+    background: url('assets/images/header.png');
 }
 
 .left_panel-content {
@@ -284,7 +284,7 @@ a {
     border: 0 none;
     border-radius: 5px;
     outline: none;
-    background: url('app/img/search_bg.png') no-repeat;
+    background: url('assets/images/search_bg.png') no-repeat;
     background-size: cover;
     box-shadow: inset 0 4px 7px rgba(0, 0, 0, .08);
 }
@@ -307,7 +307,7 @@ a {
 
     border: none;
     outline: none;
-    background: url('app/img/search.png') 0 0 no-repeat;
+    background: url('assets/images/search.png') 0 0 no-repeat;
     background-size: cover;
 }
 
@@ -414,7 +414,7 @@ a {
     z-index: 1;
     top: 24px;
 
-    background: url('app/img/torn_sheet_1.png') no-repeat;
+    background: url('assets/images/torn_sheet_1.png') no-repeat;
     background-size: cover;
 }
 
@@ -422,7 +422,7 @@ a {
     z-index: 2;
     top: 21px;
 
-    background: url('app/img/torn_sheet_2.png') no-repeat;
+    background: url('assets/images/torn_sheet_2.png') no-repeat;
     background-size: cover;
 }
 
@@ -435,7 +435,7 @@ a {
 
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    background: url('app/img/note.png') no-repeat;
+    background: url('assets/images/note.png') no-repeat;
     background-size: cover;
 }
 
@@ -470,7 +470,7 @@ a {
     width: 16px;
     height: 26px;
 
-    background: url('app/img/extend.png') no-repeat;
+    background: url('assets/images/extend.png') no-repeat;
 }
 
 .right_panel-top-pencil {
@@ -490,7 +490,7 @@ a {
     width: 26px;
     height: 26px;
 
-    background: url('app/img/pencil.png') no-repeat;
+    background: url('assets/images/pencil.png') no-repeat;
 }
 
 .right_panel-top-text {
@@ -511,7 +511,7 @@ a {
     height: 808px;
     padding-right: 7px;
 
-    background: url('app/img/page.jpg') no-repeat;
+    background: url('assets/images/page.jpg') no-repeat;
 }
 
 .note-top {
@@ -694,7 +694,7 @@ a {
     width: 35px;
     height: 46px;
 
-    background: url('app/img/clip_1.png') no-repeat;
+    background: url('assets/images/clip_1.png') no-repeat;
     background-size: cover;
 }
 
@@ -706,7 +706,7 @@ a {
     width: 49px;
     height: 32px;
 
-    background: url('app/img/clip_2.png') no-repeat;
+    background: url('assets/images/clip_2.png') no-repeat;
     background-size: cover;
 }
 
@@ -718,7 +718,7 @@ a {
     width: 44px;
     height: 42px;
 
-    background: url('app/img/clip_3.png') no-repeat;
+    background: url('assets/images/clip_3.png') no-repeat;
     background-size: cover;
 }
 
@@ -738,7 +738,7 @@ a {
 
     border: none;
     outline: none;
-    background: url('app/img/search_menu.png') no-repeat;
+    background: url('assets/images/search_menu.png') no-repeat;
     background-size: cover;
 }
 
@@ -806,7 +806,7 @@ a {
     margin-bottom: 3px;
     margin-left: 10px;
 
-    background: url('app/img/arrow_menu.png') no-repeat;
+    background: url('assets/images/arrow_menu.png') no-repeat;
 }
 
 .menu_options-item {
@@ -892,7 +892,7 @@ a {
     height: 88px;
     padding: 15px;
 
-    background: url('app/img/note.png') no-repeat;
+    background: url('assets/images/note.png') no-repeat;
     background-size: cover;
 }
 
@@ -914,7 +914,7 @@ a {
 }
 
 .footer {
-    background: url('app/img/header.png');
+    background: url('assets/images/header.png');
 }
 
 .footer .container {

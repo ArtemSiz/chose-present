@@ -7,64 +7,64 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public leftBasket: any = [{
-    src: "../app/img/1.jpg",
+    src: "assets/images/1.jpg",
     name: 'Siku - 1:87 Scale - Low Loader With John ...',
     price: '$19.55'
   },
     {
-      src: "../app/img/2.jpg",
+      src: "assets/images/2.jpg",
       name: 'Siku - 1:87 Scale - Low Loader With John ...',
       price: '$19.55'
     },
     {
-      src: "../app/img/3.jpg",
+      src: "assets/images/3.jpg",
       name: 'Siku - 1:87 Scale - Low Loader With John ...',
       price: '$19.55'
     },
     {
-      src: "../app/img/4.jpg",
-      name: 'Siku - 1:87 Scale - Low Loader With John ...',
-      price: '$19.55'
-    },
-
-    {
-      src: "../app/img/5.jpg",
-      name: 'Siku - 1:87 Scale - Low Loader With John ...',
-      price: '$19.55'
-    },
-    {
-      src: "../app/img/6.jpg",
-      name: 'Siku - 1:87 Scale - Low Loader With John ...',
-      price: '$19.55'
-    },
-    {
-      src: "../app/img/7.jpg",
-      name: 'Siku - 1:87 Scale - Low Loader With John ...',
-      price: '$19.55'
-    },
-    {
-      src: "../app/img/8.jpg",
+      src: "assets/images/4.jpg",
       name: 'Siku - 1:87 Scale - Low Loader With John ...',
       price: '$19.55'
     },
 
     {
-      src: "../app/img/9.jpg",
+      src: "assets/images/5.jpg",
       name: 'Siku - 1:87 Scale - Low Loader With John ...',
       price: '$19.55'
     },
     {
-      src: "../app/img/1.jpg",
+      src: "assets/images/6.jpg",
       name: 'Siku - 1:87 Scale - Low Loader With John ...',
       price: '$19.55'
     },
     {
-      src: "../app/img/2.jpg",
+      src: "assets/images/7.jpg",
       name: 'Siku - 1:87 Scale - Low Loader With John ...',
       price: '$19.55'
     },
     {
-      src: "../app/img/3.jpg",
+      src: "assets/images/8.jpg",
+      name: 'Siku - 1:87 Scale - Low Loader With John ...',
+      price: '$19.55'
+    },
+
+    {
+      src: "assets/images/9.jpg",
+      name: 'Siku - 1:87 Scale - Low Loader With John ...',
+      price: '$19.55'
+    },
+    {
+      src: "assets/images/1.jpg",
+      name: 'Siku - 1:87 Scale - Low Loader With John ...',
+      price: '$19.55'
+    },
+    {
+      src: "assets/images/2.jpg",
+      name: 'Siku - 1:87 Scale - Low Loader With John ...',
+      price: '$19.55'
+    },
+    {
+      src: "assets/images/3.jpg",
       name: 'Siku - 1:87 Scale - Low Loader With John ...',
       price: '$19.55'
     }
