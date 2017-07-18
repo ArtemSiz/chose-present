@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico|Signika:300,400,600|Ubuntu:400,500,700');
+
 /*
 font-family: 'Signika', sans-serif;
 font-family: 'Ubuntu', sans-serif;
@@ -113,6 +114,12 @@ a {
     color: #fff;
 }
 
+.header_autorisation-reg-text:hover,
+.header_autorisation-login-text:hover {
+
+    color: #d93655;
+}
+
 .header_autorisation ul li {
     display: inline-block;
 }
@@ -158,6 +165,11 @@ a {
     font-weight: bold;
 
     color: #1b75ba;
+}
+
+.menu-list-text:hover {
+    color: #d93655;
+    box-shadow: 0 1px #d93655;
 }
 /********************    content_wrapper   *************************/
 
@@ -219,6 +231,10 @@ a {
 
     border-radius: 2px;
     background: #d93655;
+}
+
+.left_panel-top-button-red:hover {
+    transform: translate(1px, 1px);
 }
 
 .left_panel-top-button-red-icon {
@@ -328,6 +344,10 @@ a {
 
     width: 164px;
     height: 234px;
+}
+
+.products-item:hover {
+    transform: scale(1.05);
 }
 
 .products-item-link {
@@ -460,6 +480,12 @@ a {
     margin-left: 6px;
 }
 
+.right_panel-top-extend:hover,
+.right_panel-top-pencil:hover {
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    transform: translate(1px, 1px);
+}
+
 .right_panel-top-extend-icon {
     position: relative;
     top: 20%;
@@ -542,7 +568,16 @@ a {
     margin-right: 14px;
 }
 
-.note-top-text p {
+.note-top-text-wrapper {
+    height: 90px;
+    overflow: hidden;
+}
+
+.note-top-text-wrapper.open {
+    height: 300px;
+}
+
+.note-top-text-wrapper-paper {
     font-family: 'Pacifico', cursive;
     font-size: 18px;
     line-height: 1.49;
@@ -559,6 +594,10 @@ a {
     text-decoration: underline;
 
     color: #a3acb3;
+}
+
+.note-top-text a:hover {
+    color: #d93655;
 }
 
 .note-content {
@@ -742,6 +781,10 @@ a {
     background-size: cover;
 }
 
+.note-content-menu-search-submit:hover {
+    transform: scale(1.08);
+}
+
 /********************* Menu options *************************/
 
 .menu_options {
@@ -814,6 +857,10 @@ a {
 
     margin-right: -6px;
     margin-bottom: 12px;
+}
+
+.menu_options-item-text:hover {
+    box-shadow: 0 1px #d93655;
 }
 /**************** Product Right ******************/
 
@@ -913,6 +960,11 @@ a {
     border-radius: 5px;
 }
 
+.right_panel-bottom-button:hover {
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    transform: translate(1px, 1px);
+}
+
 .footer {
     background: url('assets/images/header.png');
 }
@@ -941,9 +993,15 @@ a {
 .facebook_icon,
 .twitter_icon {
     display: inline-block;
-
+    border-radius: 50%;
     width: 46px;
     height: 46px;
+}
+
+.facebook_icon:hover,
+.twitter_icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 7px rgba(0,0,0,0.5);
 }
 
 .facebook_icon-link,
@@ -967,6 +1025,11 @@ a {
     display: inline-block;
 }
 
+.footer_menu-list-text:hover {
+    color: #d93655;
+    box-shadow: 0 1px #d93655;
+}
+
 .footer_menu-list-item-link {
     font-family: 'Signika', sans-serif;
     font-size: 16px;
@@ -977,6 +1040,11 @@ a {
     text-transform: uppercase;
 
     color: #1b75ba;
+}
+
+.footer_menu-list-item-link:hover {
+    color: #d93655;
+    box-shadow: 0 1px #d93655;
 }
 
 .footer_copyright {
