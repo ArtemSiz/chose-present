@@ -247,8 +247,10 @@ a {
 
 .left_panel-top-button-red-text {
     display: inline-block;
-
-    padding-top: 5px;
+    font-family: 'Signika', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 3px;
 
     text-transform: uppercase;
 
@@ -587,68 +589,6 @@ a {
     overflow: hidden;
 }
 
-/*.note-top {*/
-    /*position: relative;*/
-
-    /*width: 100%;*/
-/*}*/
-
-/*.note-top-img {*/
-    /*display: inline-block;*/
-
-    /*width: 33%;*/
-    /*margin-top: 2px;*/
-    /*padding: 24px 16px 3px 9px;*/
-/*}*/
-
-/*.note-top-img img {*/
-    /*border: 4px solid #fff;*/
-    /*box-shadow: 1px 3px 3px rgba(0, 0, 0, .1);*/
-/*}*/
-
-/*.note-top-text {*/
-    /*display: inline-block;*/
-    /*float: right;*/
-
-    /*width: 60%;*/
-    /*margin-top: 34px;*/
-    /*margin-right: 14px;*/
-/*}*/
-
-/*.note-top-text-wrapper {*/
-    /*height: 90px;*/
-    /*overflow: hidden;*/
-/*}*/
-
-/*.note-top-text-wrapper.open {*/
-    /*height: 300px;*/
-/*}*/
-
-/*.note-top-text-wrapper-paper {*/
-    /*font-family: 'Pacifico', cursive;*/
-    /*font-size: 18px;*/
-    /*line-height: 1.49;*/
-
-    /*margin-bottom: 2px;*/
-
-    /*color: #464545;*/
-/*}*/
-
-/*.note-top-text a {*/
-    /*font-family: 'Ubuntu', sans-serif;*/
-    /*font-size: 12px;*/
-
-    /*text-decoration: underline;*/
-
-    /*color: #a3acb3;*/
-/*}*/
-
-/*.note-top-text a:hover {*/
-    /*color: #d93655;*/
-/*}*/
-
-
-/*Новая вставка*/
 .note-top img {
     float: left;
     border: 4px solid #fff;
@@ -664,7 +604,7 @@ a {
 }
 
 .note-top-text-wrapper.open {
-    height: 182px;
+    height: 226px;
     width: 100%;
 }
 
@@ -700,7 +640,6 @@ a {
     width: 99%;
     height: 553px;
     margin-top: 4px;
-    padding-top: 24px;
     padding-left: 13px;
 
     border-top: 4px double #f9cdd5;
@@ -813,7 +752,7 @@ a {
 .note-content-menu-search-input::-webkit-input-placeholder {
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
-
+    font-weight: 500;
     color: #d93655;
 }
 
@@ -923,7 +862,7 @@ a {
 .menu_options span {
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
-
+    font-weight: 500;
     color: #d93655;
 }
 .menu_options-item span {
@@ -944,7 +883,7 @@ a {
     width: 9px;
     height: 6px;
     margin-bottom: 3px;
-    margin-left: 10px;
+    margin-left: 8px;
 
     background: url('assets/images/arrow_menu.png') no-repeat;
 }
@@ -956,6 +895,10 @@ a {
     margin-bottom: 12px;
 }
 
+.menu_options-item .menu_options-item-text {
+    font-size: 15px;
+}
+
 .menu_options-item-text:hover {
     box-shadow: 0 1px #d93655;
 }
@@ -963,6 +906,7 @@ a {
 
 .product {
     display: block;
+    padding-top: 15px;
 }
 
 .product.close {
@@ -972,7 +916,7 @@ a {
 .under-menu {
     position: relative;
 
-    margin-top: 64px;
+    margin-top: 48px;
 }
 
 .under-menu .note-content-description .where {
