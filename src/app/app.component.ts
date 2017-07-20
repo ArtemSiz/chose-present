@@ -76,6 +76,14 @@ export class AppComponent {
     create(index): any {
         event.preventDefault();
         this.rightBasket.push(index);
+        for (let i = 0; i < this.leftBasket.length; i++) {
+            let number = this.leftBasket[i].src;
+            if (number === index) {
+                document.querySelectorAll('.products-item-added')[i].classList.add('add');
+                document.querySelectorAll('.products-item-added-text')[i].classList.add('add');
+                document.querySelectorAll('.products-item')[i].classList.add('add');
+            }
+        }
     }
 
     openMenu(index) {
@@ -105,17 +113,27 @@ export class AppComponent {
                 this.rightBasket.splice(i, 1);
             }
         }
+        for (let i = 0; i < this.leftBasket.length; i++) {
+            let number = this.leftBasket[i].src;
+            if (number === index) {
+                document.querySelectorAll('.products-item-added')[i].classList.remove('add');
+                document.querySelectorAll('.products-item-added-text')[i].classList.remove('add');
+                document.querySelectorAll('.products-item')[i].classList.remove('add');
+            }
+        }
     }
 
     openPaper() {
         event.preventDefault();
-        // let text = document.getElementById('paper').textContent;
-        // document.getElementById('paper').textContent = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.' +
-        //     ' Accusantium ad amet architecto atque commodi cum cupiditate dignissimos doloribus enim et eveniet, iste' +
-        //     ' iure magni, minus modi nisi nobis porro, quod tenetur voluptatum. A aliquam aspernatur atque, consequatur' +
-        //     ' deserunt dolorum ea eaque earum et excepturi facere incidunt itaque labore laudantium magnam natus'
-
-        document.querySelector('.note-top-text-wrapper').classList.toggle('open');
+        let text = document.querySelector('div.note-top a').textContent;
+        if ( text === 'Read More >>') {
+            document.querySelector('div.note-top a').textContent = 'Close <<';
+            document.querySelector('.note-top-text-wrapper').classList.toggle('open');
+            console.log(text);
+        } else {
+            document.querySelector('div.note-top a').textContent = 'Read More >>';
+            document.querySelector('.note-top-text-wrapper').classList.toggle('open');
+        }
     }
 }
 

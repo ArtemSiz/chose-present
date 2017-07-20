@@ -1,180 +1,213 @@
 <div class="wrapper">
-  <div class="header">
-    <div class="container">
-      <div class="header_logo">
-        <a href="#"><img src="assets/images/logo.png" alt="" class="logo-pic"></a>
-      </div>
-      <div class="header_autorisation">
-        <ul>
-          <li><a href="#">
-            <span class="header_autorisation-reg-icon"><img src="assets/images/users.png" alt=""></span>
-            <span class="header_autorisation-reg-text">Register</span>
-          </a></li>
-          <li><a href="#">
-            <span class="header_autorisation-login-icon"><img src="assets/images/lock.png" alt=""></span>
-            <span class="header_autorisation-login-text">Login</span>
-          </a></li>
-        </ul>
-      </div>
-      <div class="header_menu">
-        <ul class="menu">
-          <li class="menu-list"><a href="#"><span class="menu-list-text">Home</span></a></li>
-          <li class="menu-list"><a href="#"><span class="menu-list-text">Create a list</span></a></li>
-          <li class="menu-list"><a href="#"><span class="menu-list-text">How it works</span></a></li>
-        </ul>
-      </div>
+    <div class="header">
+        <div class="container">
+            <div class="header_logo">
+                <a href="#"><img src="assets/images/logo.png" alt="" class="logo-pic"></a>
+            </div>
+            <div class="header_autorisation">
+                <ul>
+                    <li><a href="#">
+                        <span class="header_autorisation-reg-icon"><img src="assets/images/users.png" alt=""></span>
+                        <span class="header_autorisation-reg-text">Register</span>
+                    </a></li>
+                    <li><a href="#">
+                        <span class="header_autorisation-login-icon"><img src="assets/images/lock.png" alt=""></span>
+                        <span class="header_autorisation-login-text">Login</span>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="header_menu">
+                <ul class="menu">
+                    <li class="menu-list"><a href="#"><span class="menu-list-text">Home</span></a></li>
+                    <li class="menu-list"><a href="#"><span class="menu-list-text">Create a list</span></a></li>
+                    <li class="menu-list"><a href="#"><span class="menu-list-text">How it works</span></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="content_wrapper">
+        <div class="container">
+            <div class="left_panel">
+                <div class="left_panel-content">
+                    <div class="left_panel-top">
+                        <h2>Chose Your Presents</h2>
+                        <a href="#" class="left_panel-top-button-red">
+                            <span class="left_panel-top-button-red-icon"><img src="assets/images/back.png"
+                                                                              alt=""></span>
+                            <span class="left_panel-top-button-red-text">Back</span>
+                        </a>
+                        <div class="left_panel-top-steps"><span class="left_panel-top-steps-text">Step 2 of 2</span>
+                        </div>
+
+                    </div>
+                    <p class="left_panel-content-text">Search for your products using the search function below. To add
+                        an item to your list, hover over the item and click the "Add to list" button.</p>
+                    <div class="search">
+                        <form action="#" class="search_form">
+                            <input type="text" placeholder="Search for your presents!"
+                                   class="search_input">
+                            <input type="submit" value="" class="search_submit">
+                        </form>
+                    </div>
+                    <div class="products">
+                        <div class="products-item" *ngFor="let leftPresent of leftBasket let i = index" (click)="create(leftPresent.src)">
+                            <img src="assets/images/added.png" alt="" class="products-item-added">
+                            <div class="products-item-added-text"><p>This item has already  been added to your list</p></div>
+                            <a href="#" class="products-item-link">
+                                <img src={{leftBasket[i].src}} alt="" class="products-item-img" align="top">
+                                <div class="products-item-text">
+                                    <p>{{leftBasket[i].name}}</p>
+                                    <span class="products-item-price">{{leftBasket[i].price}}</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="left_panel-content-text-bottom">Please note, not all prices displayed will be
+                        accurate.</p>
+                </div>
+            </div>
+            <div class="right_panel">
+                <div class="right_panel-content">
+                    <div class="right_panel-top">
+                        <a class="right_panel-top-extend"><span class="right_panel-top-extend-icon"></span></a>
+                        <a class="right_panel-top-pencil"><span class="right_panel-top-pencil-icon"></span></a>
+                        <p class="right_panel-top-text">My Present Wishlist</p>
+                    </div>
+                    <div class="torn_sheet-1"></div>
+                    <div class="torn_sheet-2"></div>
+                    <div class="note">
+                        <!--<div class="note-top">-->
+                        <!--<div class="note-top-img">-->
+                        <!--<img src="assets/images/man_and_tractor.jpg" alt="">-->
+                        <!--</div>-->
+                        <!--<div class="note-top-text">-->
+                        <!--<div class="note-top-text-wrapper">-->
+                        <!--<p class="note-top-text-wrapper-paper" id="paper">lorem ipsum dolor sit amet, consectetur adigiscing elit. Aenean in-->
+                        <!--dolar convallis...</p>-->
+                        <!--</div>-->
+                        <!--<a href="#" (click)="openPaper()">Read More >></a>-->
+                        <!--</div>-->
+                        <!--<div class="clip_one"></div>-->
+                        <!--</div>-->
+
+                        <!--Новая вставка -->
+                        <div class="note-top">
+                            <img src="assets/images/man_and_tractor.jpg" alt="">
+                            <div class="note-top-text-wrapper">
+                                <p class="note-top-text-wrapper-paper" id="paper">Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing
+                                    elit. Consectetur delectus deserunt earum enim facere fugiat in magni quaerat,
+                                    recusandae,
+                                    sapiente sunt, totam voluptates. A ab accusantium aspernatur beatae culpa deserunt
+                                    distinctio
+                                    eaque, esse est eum fuga minus molestias neque optio, perspiciatis porro quis rem
+                                    saepe.</p>
+                            </div>
+                            <a href="#" (click)="openPaper()">Read More >></a>
+                            <div class="clip_one"></div>
+                        </div>
+
+                        <!------------------------------------------->
+                        <div class="note-content">
+
+                            <div id="product" class="product" *ngFor="let present of rightBasket let i = index">
+                                <div class="note-content-img">
+                                    <img src={{present}} alt="">
+                                </div>
+                                <div class="note-content-description" (click)="openMenu(present)">
+                                    <p id="one" class="note-content-description-name">Remote control Tractor</p>
+                                    <span class="note-content-description-price">Best Price: $12</span>
+                                    <span class="by">By:</span><span class="where"><img src="assets/images/amazon.png"
+                                                                                        alt=""></span>
+                                </div>
+
+                                <div class="note-content-menu" id="menu">
+                                    <div class="note-content-menu-search">
+                                        <form action="#">
+                                            <input type="submit" class="note-content-menu-search-submit" value="">
+                                            <input type="text" class="note-content-menu-search-input"
+                                                   placeholder="View item">
+                                        </form>
+                                    </div>
+                                    <div class="menu_options">
+                                        <a href="#" class="menu_options-link" (click)="openList(present)"><span>More Options</span><span
+                                                class="menu_options-arrow_menu"></span></a>
+                                        <ul>
+                                            <li class="menu_options-item"><a href=""
+                                                                             class="menu_options-item-link-remove"
+                                                                             (click)="removeProduct(present)">
+                                                <span class="menu_options-item-remove-icon"><img
+                                                        src="assets/images/remove.png" alt=""></span>
+                                                <span class="menu_options-item-text">Remove Item</span>
+                                            </a></li>
+                                            <li class="menu_options-item"><a href="" class="menu_options-item-link">
+                                                <span class="menu_options-item-refresh-icon"><img
+                                                        src="assets/images/refresh.png" alt=""></span>
+                                                <span class="menu_options-item-text">Re-assign Item</span>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product under-menu">
+                                <div class="note-content-img">
+                                    <img src="assets/images/tractor.jpg" alt="">
+                                </div>
+                                <div class="note-content-description">
+                                    <p class="note-content-description-name">Remote control Tractor</p>
+                                    <span class="note-content-description-price">Best Price: $12</span>
+                                    <span class="by">By:</span><span class="where"><img src="assets/images/amazon.png"
+                                                                                        alt=""></span>
+                                </div>
+                                <div class="expected-product"></div>
+                                <div class="expected-product-link"><a href="#">This item has been brought!</a></div>
+
+                            </div>
+                            <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                            <br><br><br><br><br><br><br><br><br><br><br><br>
+
+                            <div class="clip_two"></div>
+                            <div class="clip_three"></div>
+                        </div>
+                        <div class="logo_2"><img src="assets/images/logo_2.png" alt="name"></div>
+                    </div>
+                    <div class="right_panel-bottom">
+                        <a href="#" class="right_panel-bottom-button">Save & Share</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
-  </div>
-  <div class="content_wrapper">
-    <div class="container">
-      <div class="left_panel">
-        <div class="left_panel-content">
-          <div class="left_panel-top">
-            <h2>Chose Your Presents</h2>
-            <a href="#" class="left_panel-top-button-red">
-              <span class="left_panel-top-button-red-icon"><img src="assets/images/back.png" alt=""></span>
-              <span class="left_panel-top-button-red-text">Back</span>
-            </a>
-            <div class="left_panel-top-steps"><span class="left_panel-top-steps-text">Step 2 of 2</span>
-            </div>
-
-          </div>
-          <p class="left_panel-content-text">Search for your products using the search function below. To add
-            an item to your list, hover over the item and click the "Add to list" button.</p>
-          <div class="search">
-            <form action="#" class="search_form">
-              <input type="text" placeholder="Search for your presents!"
-                     class="search_input">
-              <input type="submit" value="" class="search_submit">
-            </form>
-          </div>
-          <div class="products">
-            <div class="products-item" *ngFor="let leftPresent of leftBasket let i = index" (click)="create(leftPresent.src)">
-              <a href="#" class="products-item-link">
-                <img src={{leftBasket[i].src}} alt="" class="products-item-img" align="top">
-                <div class="products-item-text">
-                  <p>{{leftBasket[i].name}}</p>
-                  <span class="products-item-price">{{leftBasket[i].price}}</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <p class="left_panel-content-text-bottom">Please note, not all prices displayed will be accurate.</p>
-        </div>
-      </div>
-      <div class="right_panel">
-        <div class="right_panel-content">
-          <div class="right_panel-top">
-            <a class="right_panel-top-extend"><span class="right_panel-top-extend-icon"></span></a>
-            <a class="right_panel-top-pencil"><span class="right_panel-top-pencil-icon"></span></a>
-            <p class="right_panel-top-text">My Present Wishlist</p>
-          </div>
-          <div class="torn_sheet-1"></div>
-          <div class="torn_sheet-2"></div>
-          <div class="note">
-            <div class="note-top">
-              <div class="note-top-img">
-                <img src="assets/images/man_and_tractor.jpg" alt="">
-              </div>
-              <div class="note-top-text">
-                <div class="note-top-text-wrapper">
-                  <p class="note-top-text-wrapper-paper" id="paper">lorem ipsum dolor sit amet, consectetur adigiscing elit. Aenean in
-                    dolar convallis...</p>
-                </div>
-                <a href="#" (click)="openPaper()">Read More >></a>
-              </div>
-              <div class="clip_one"></div>
-            </div>
-            <div class="note-content">
-
-              <div id="product" class="product" *ngFor="let present of rightBasket let i = index">
-                <div class="note-content-img">
-                  <img src={{present}} alt="">
-                </div>
-                <div class="note-content-description" (click)="openMenu(present)">
-                  <p id="one" class="note-content-description-name">Remote control Tractor</p>
-                  <span class="note-content-description-price">Best Price: $12</span>
-                  <span class="by">By:</span><span class="where"><img src="assets/images/amazon.png" alt=""></span>
-                </div>
-
-                <div class="note-content-menu" id="menu">
-                  <div class="note-content-menu-search">
-                    <form action="#">
-                      <input type="submit" class="note-content-menu-search-submit" value="">
-                      <input type="text" class="note-content-menu-search-input" placeholder="View item">
-                    </form>
-                  </div>
-                  <div class="menu_options">
-                    <a href="#" class="menu_options-link" (click)="openList(present)"><span>More Options</span><span class="menu_options-arrow_menu"></span></a>
-                    <ul>
-                      <li class="menu_options-item"><a href="" class="menu_options-item-link-remove" (click)="removeProduct(present)">
-                        <span class="menu_options-item-remove-icon"><img src="assets/images/remove.png" alt=""></span>
-                        <span class="menu_options-item-text">Remove Item</span>
-                      </a></li>
-                      <li class="menu_options-item"><a href="" class="menu_options-item-link">
-                        <span class="menu_options-item-refresh-icon"><img src="assets/images/refresh.png" alt=""></span>
-                        <span class="menu_options-item-text">Re-assign Item</span>
-                      </a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div class="product under-menu">
-                <div class="note-content-img">
-                  <img src="assets/images/tractor.jpg" alt="">
-                </div>
-                <div class="note-content-description">
-                  <p class="note-content-description-name">Remote control Tractor</p>
-                  <span class="note-content-description-price">Best Price: $12</span>
-                  <span class="by">By:</span><span class="where"><img src="assets/images/amazon.png" alt=""></span>
-                </div>
-                <div class="expected-product"></div>
-                <div class="expected-product-link"><a href="#">This item has been brought!</a></div>
-
-              </div>
-              <br><br><br><br><br><br><br><br><br><br><br><br><br>
-              <br><br><br><br><br><br><br><br><br><br><br><br>
-
-              <div class="clip_two"></div>
-              <div class="clip_three"></div>
-            </div>
-            <div class="logo_2"><img src="assets/images/logo_2.png" alt="name"></div>
-          </div>
-          <div class="right_panel-bottom">
-            <a href="#" class="right_panel-bottom-button">Save & Share</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <div class="empty"></div>
+    <div class="empty"></div>
 </div>
 
 <div class="footer">
-  <div class="container">
-    <div class="footer_logo">
-      <a href="#"><img src="assets/images/logo.png" alt="" class="logo-pic"></a>
+    <div class="container">
+        <div class="footer_logo">
+            <a href="#"><img src="assets/images/logo.png" alt="" class="logo-pic"></a>
+        </div>
+        <div class="social_network">
+            <div class="facebook_icon"><a href="#" class="facebook_icon-link"><img src="assets/images/facebook_icon.png"
+                                                                                   alt=""></a></div>
+            <div class="twitter_icon"><a href="#" class="twitter_icon-link"><img src="assets/images/twitter_icon.png"
+                                                                                 alt=""></a></div>
+        </div>
+        <div class="footer_menu">
+            <ul class="footer_menu-list">
+                <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">Home</a></li>
+                <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">Register</a></li>
+                <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">Login</a></li>
+                <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">Create a list</a></li>
+                <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">How it works</a></li>
+                <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">Faq</a></li>
+                <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer_copyright">
+            <span>Copyright 2013 Present Wishlist. All rights reserved.</span>
+        </div>
     </div>
-    <div class="social_network">
-      <div class="facebook_icon"><a href="#" class="facebook_icon-link"><img src="assets/images/facebook_icon.png" alt=""></a></div>
-      <div class="twitter_icon"><a href="#" class="twitter_icon-link"><img src="assets/images/twitter_icon.png" alt=""></a></div>
-    </div>
-    <div class="footer_menu">
-      <ul class="footer_menu-list">
-        <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">Home</a></li>
-        <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">Register</a></li>
-        <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">Login</a></li>
-        <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">Create a list</a></li>
-        <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">How it works</a></li>
-        <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">Faq</a></li>
-        <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer_copyright">
-      <span>Copyright 2013 Present Wishlist. All rights reserved.</span>
-    </div>
-  </div>
 </div>

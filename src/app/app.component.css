@@ -350,6 +350,52 @@ a {
     transform: scale(1.05);
 }
 
+.products-item-added {
+    display: none;
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    z-index: 1;
+}
+
+.products-item-added.add,
+.products-item-added-text.add {
+    display: block;
+}
+
+.products-item-added-text {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+}
+
+
+.products-item-added-text p {
+    font-family: 'Signika', sans-serif;
+    font-size: 16px;
+    color: #1b75ba;
+    text-align: center;
+}
+
+
+.products-item::after {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 104%;
+    background-color: #fff;
+    opacity: .95;
+}
+
+.products-item.add::after {
+    display: block;
+}
+
 .products-item-link {
     position: relative;
 
@@ -538,43 +584,88 @@ a {
     padding-right: 7px;
 
     background: url('assets/images/page.jpg') no-repeat;
+    overflow: hidden;
 }
 
-.note-top {
-    position: relative;
+/*.note-top {*/
+    /*position: relative;*/
 
-    width: 100%;
-}
+    /*width: 100%;*/
+/*}*/
 
-.note-top-img {
-    display: inline-block;
+/*.note-top-img {*/
+    /*display: inline-block;*/
 
-    width: 33%;
-    margin-top: 2px;
-    padding: 24px 16px 3px 9px;
-}
+    /*width: 33%;*/
+    /*margin-top: 2px;*/
+    /*padding: 24px 16px 3px 9px;*/
+/*}*/
 
-.note-top-img img {
+/*.note-top-img img {*/
+    /*border: 4px solid #fff;*/
+    /*box-shadow: 1px 3px 3px rgba(0, 0, 0, .1);*/
+/*}*/
+
+/*.note-top-text {*/
+    /*display: inline-block;*/
+    /*float: right;*/
+
+    /*width: 60%;*/
+    /*margin-top: 34px;*/
+    /*margin-right: 14px;*/
+/*}*/
+
+/*.note-top-text-wrapper {*/
+    /*height: 90px;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*.note-top-text-wrapper.open {*/
+    /*height: 300px;*/
+/*}*/
+
+/*.note-top-text-wrapper-paper {*/
+    /*font-family: 'Pacifico', cursive;*/
+    /*font-size: 18px;*/
+    /*line-height: 1.49;*/
+
+    /*margin-bottom: 2px;*/
+
+    /*color: #464545;*/
+/*}*/
+
+/*.note-top-text a {*/
+    /*font-family: 'Ubuntu', sans-serif;*/
+    /*font-size: 12px;*/
+
+    /*text-decoration: underline;*/
+
+    /*color: #a3acb3;*/
+/*}*/
+
+/*.note-top-text a:hover {*/
+    /*color: #d93655;*/
+/*}*/
+
+
+/*Новая вставка*/
+.note-top img {
+    float: left;
     border: 4px solid #fff;
     box-shadow: 1px 3px 3px rgba(0, 0, 0, .1);
-}
-
-.note-top-text {
-    display: inline-block;
-    float: right;
-
-    width: 60%;
-    margin-top: 34px;
-    margin-right: 14px;
+    margin: 8px;
 }
 
 .note-top-text-wrapper {
     height: 90px;
     overflow: hidden;
+    padding: 12px;
+
 }
 
 .note-top-text-wrapper.open {
-    height: 300px;
+    height: 182px;
+    width: 100%;
 }
 
 .note-top-text-wrapper-paper {
@@ -587,19 +678,20 @@ a {
     color: #464545;
 }
 
-.note-top-text a {
+.note-top a {
     font-family: 'Ubuntu', sans-serif;
     font-size: 12px;
 
     text-decoration: underline;
 
     color: #a3acb3;
+    padding-left: 12px;
 }
 
-.note-top-text a:hover {
+.note-top a:hover {
     color: #d93655;
 }
-
+/**************************************/
 .note-content {
     position: relative;
 
@@ -800,6 +892,11 @@ a {
     border-radius: 3px;
     background: #f7f7f7;
 }
+
+.menu_options-link span:hover {
+    box-shadow: 0 1px #d93655;
+}
+
 .menu_options ul {
     position: relative;
     left: 13px;
