@@ -95,16 +95,6 @@ export class AppComponent {
         }
     }
 
-    openList(index) {
-        event.preventDefault();
-        let numberImage = this.rightBasket.indexOf(index);
-        for (let i = 0; i < this.rightBasket.length; i++) {
-            if (numberImage === i) {
-                document.querySelectorAll('div.menu_options')[i].classList.toggle('open');
-            }
-        }
-    }
-
     removeProduct(index) {
         event.preventDefault();
         let numberImage = this.rightBasket.indexOf(index);

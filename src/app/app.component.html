@@ -51,17 +51,23 @@
                         </form>
                     </div>
                     <div class="products">
-                        <div class="products-item" *ngFor="let leftPresent of leftBasket let i = index" (click)="create(leftPresent.src)">
-                            <img src="assets/images/added.png" alt="" class="products-item-added">
-                            <div class="products-item-added-text"><p>This item has already  been added to your list</p></div>
-                            <a href="#" class="products-item-link">
-                                <img src={{leftBasket[i].src}} alt="" class="products-item-img" align="top">
-                                <div class="products-item-text">
-                                    <p>{{leftBasket[i].name}}</p>
-                                    <span class="products-item-price">{{leftBasket[i].price}}</span>
-                                </div>
-                            </a>
+                        <div class="products-container">
+                            <div class="products-item" *ngFor="let leftPresent of leftBasket let i = index" (click)="create(leftPresent.src)">
+                                <img src="assets/images/added.png" alt="" class="products-item-added">
+                                <div class="products-item-added-text"><p>This item has already  been added to your list</p></div>
+                                <a href="#" class="products-item-link">
+                                    <div class="products-item-img">
+                                        <img src={{leftBasket[i].src}} alt="" align="top">
+                                    </div>
+
+                                    <div class="products-item-text">
+                                        <p>{{leftBasket[i].name}}</p>
+                                        <span class="products-item-price">{{leftBasket[i].price}}</span>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
+
                     </div>
                     <p class="left_panel-content-text-bottom">Please note, not all prices displayed will be
                         accurate.</p>
@@ -112,29 +118,44 @@
                                                    placeholder="View item">
                                         </form>
                                     </div>
-                                    <div class="menu_options">
-                                        <a href="#" class="menu_options-link" (click)="openList(present)"><span>More Options</span><span
-                                                class="menu_options-arrow_menu"></span></a>
-                                        <ul>
-                                            <li class="menu_options-item"><a href=""
-                                                                             class="menu_options-item-link-remove"
-                                                                             (click)="removeProduct(present)">
-                                                <span class="menu_options-item-remove-icon"><img
-                                                        src="assets/images/remove.png" alt=""></span>
-                                                <span class="menu_options-item-text">Remove Item</span>
-                                            </a></li>
-                                            <li class="menu_options-item"><a href="" class="menu_options-item-link">
-                                                <span class="menu_options-item-refresh-icon"><img
-                                                        src="assets/images/refresh.png" alt=""></span>
-                                                <span class="menu_options-item-text">Re-assign Item</span>
-                                            </a></li>
-                                        </ul>
-                                    </div>
+                                    <!--<div class="menu_options">-->
+                                        <!--<a href="#" class="menu_options-link" (click)="openList(present)"><span>More Options</span><span class="menu_options-arrow_menu"></span></a>-->
+                                        <!--<ul>-->
+                                            <!--<li class="menu_options-item"><a href="#" class="menu_options-item-link-remove" (click)="removeProduct(present)">-->
+                                                <!--<span class="menu_options-item-remove-icon"><img-->
+                                                        <!--src="assets/images/remove.png" alt=""></span>-->
+                                                <!--<span class="menu_options-item-text">Remove Item</span>-->
+                                            <!--</a></li>-->
+                                            <!--<li class="menu_options-item"><a href="" class="menu_options-item-link">-->
+                                                <!--<span class="menu_options-item-refresh-icon"><img-->
+                                                        <!--src="assets/images/refresh.png" alt=""></span>-->
+                                                <!--<span class="menu_options-item-text">Re-assign Item</span>-->
+                                            <!--</a></li>-->
+                                        <!--</ul>-->
+                                    <!--</div>-->
+                                    <!--Новая вставка-->
+
+                                    <ul class="menu_options">
+                                        <li><a href="#" class="menu_options-link"><span>More Options</span><span class="menu_options-arrow_menu"></span></a>
+                                            <ul class="submenu_options">
+                                                <li class="menu_options-item"><a href="#" class="menu_options-item-link-remove" (click)="removeProduct(present)">
+                                                    <span class="menu_options-item-remove-icon"><img src="assets/images/remove.png" alt=""></span>
+                                                    <span class="menu_options-item-text">Remove Item</span></a>
+                                                </li>
+                                                <li class="menu_options-item"><a href="" class="menu_options-item-link">
+                                                    <span class="menu_options-item-refresh-icon"><img src="assets/images/refresh.png" alt=""></span>
+                                                    <span class="menu_options-item-text">Re-assign Item</span></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                            <!--*******************************************-->
                                 </div>
                             </div>
 
                             <div class="product under-menu">
-                                <div class="note-content-img">
+                                <div class="under-menu-img">
                                     <img src="assets/images/tractor.jpg" alt="">
                                 </div>
                                 <div class="note-content-description">
@@ -180,12 +201,12 @@
         <div class="footer_menu">
             <ul class="footer_menu-list">
                 <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">Home</a></li>
-                <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">Register</a></li>
+                <li class="footer_menu-list-item register"><a href="#" class="footer_menu-list-item-link">Register</a></li>
                 <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">Login</a></li>
-                <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">Create a list</a></li>
+                <li class="footer_menu-list-item create"><a href="#" class="footer_menu-list-item-link">Create a list</a></li>
                 <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">How it works</a></li>
                 <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">Faq</a></li>
-                <li class="footer_menu-list-item"><a href="#" class="footer_menu-list-item-link">Contact</a></li>
+                <li class="footer_menu-list-item contact"><a href="#" class="footer_menu-list-item-link">Contact</a></li>
             </ul>
         </div>
         <div class="footer_copyright">
