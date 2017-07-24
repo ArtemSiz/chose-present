@@ -45,8 +45,7 @@
                         an item to your list, hover over the item and click the "Add to list" button.</p>
                     <div class="search">
                         <form action="#" class="search_form">
-                            <input type="text" placeholder="Search for your presents!"
-                                   class="search_input">
+                            <input type="text" placeholder="Search for your presents!" class="search_input">
                             <input type="submit" value="" class="search_submit">
                         </form>
                     </div>
@@ -101,11 +100,11 @@
 
                         <div class="note-content">
 
-                            <div id="product" class="product" *ngFor="let present of rightBasket let i = index">
+                            <div id="product" class="product" (click)="openMenu(present)" *ngFor="let present of rightBasket let i = index">
                                 <div class="note-content-img">
                                     <img src={{present}} alt="">
                                 </div>
-                                <div class="note-content-description" (click)="openMenu(present)">
+                                <div class="note-content-description">
                                     <p id="one" class="note-content-description-name">Remote control Tractor</p>
                                     <span class="note-content-description-price">Best Price: $12</span>
                                     <span class="by">By:</span><span class="where"><img src="assets/images/amazon.png" alt=""></span>
@@ -166,6 +165,7 @@
                                 </div>
                                 <div class="expected-product"></div>
                                 <div class="expected-product-link"><a href="#">This item has been brought!</a></div>
+
 
                             </div>
                             <br><br><br><br><br><br><br><br><br><br><br><br><br>
