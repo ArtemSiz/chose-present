@@ -125,5 +125,9 @@ export class AppComponent {
             document.querySelector('.note-top-text-wrapper').classList.toggle('open');
         }
     }
+
+    noChange() {
+        event.preventDefault()
+    }
 }
 
